@@ -1,0 +1,25 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-family: sans-serif;
+    text-align: justify;
+}
+h1,h2,h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    color: rgb(31, 30, 30);
+}
+main{
+    width: 80vw;
+    margin: 0 auto;
+}
+img{
+    width: 70vw;
+}
+figure{
+    text-align: center;
+    margin: 60px 0;
+}

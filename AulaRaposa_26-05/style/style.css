@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;  
+}
+.titulo{
+    /* cor plano de fundo */
+    background-color: rgb(2, 29, 2);
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main .conteudo{
+    width: 70vw;
+    margin: 0 auto;
+}
+.conteudo{
+    margin: 30px 0;
+}
+p{
+    text-align: justify;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.italico{
+    font-style: italic;
+    color: #51E009;
+}
+figcaption{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+img{
+    width: 60vw;
+    display: block;
+    margin: 0 auto;
+}

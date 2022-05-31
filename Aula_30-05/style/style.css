@@ -1,29 +1,50 @@
-body{
+body {
     margin: 0;
     padding: 0;  
-    background-color: rgba(255, 255, 255, 0.363);
+    /* background: linear-gradient(90deg, rgba(229,9,20,1) 18%, rgba(171,7,15,1) 31%, rgba(114,4,10,1) 42%, rgba(83,3,7,1) 55%, rgba(0,0,0,1) 68%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 83%, rgba(0,0,0,1) 94%); */
+    /* background: linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(25,1,2,1) 16%, rgba(59,2,5,1) 27%, rgba(86,3,7,1) 44%, rgba(137,5,12,1) 58%, rgba(166,6,15,1) 73%, rgba(229,9,20,1) 90%); */
+    background: linear-gradient(0deg, rgba(86,3,7,1) 11%, rgba(137,5,12,1) 31%, rgba(166,6,15,1) 53%, rgba(229,9,20,1) 79%);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 header{
     /* cor plano de fundo */
     background-color: #000;
-    color: rgb(255, 0, 0);
+    color: #fff;
     padding: 8px;
-    text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header h1{
+    margin-left: 20px;
 }
 main {
     width: 70vw;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 img{
     width: 30vw;
 }
 div{
-    margin: 20px;
-    padding: 10px;
-    background-color: #fff;
+    padding: 20px;
+    margin: 30px 0;
+    /* background-color: #000000BF; */
+    /* background-color: #22222271; */
+    background-color: #000;
+    color: #fff;
     border: solid 2px #000;
-    box-shadow: 2px 2px 2px 1px #000;
+    box-shadow: 2px 3px 5px 2px #000;
     border-radius: 5px;
+}
+p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+a{
+    padding: 10px;
+    color: #fff;
+    border: solid 2px #E50914;
+    border-radius: 5px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #E50914;
 }

@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    /* cor plano de fundo */
+    background-color:#09062c ;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main{
+    width: 80vw;
+    margin: 30px auto;
+}
+p{
+    text-align: justify;
+    font-size: 16px;
+}
+.box{
+    clear: both;
+}
+#planeta{
+    margin-left: 3em;
+    width: 30vw;
+    float: right;
+}
+.caixa2 div{
+    margin: 0 0 4em 0;
+}
+.caixa2 h1{
+    font-size: 40px;
+    font-weight: bold;
+    clear: both;
+}
+#mercurio{
+    margin-right: 3em;
+    width: 27vw;
+    float: left;
+}
+#venus{
+    margin-left: 3em;
+    width: 27vw;
+    float: right;
+}
+#terra{
+    margin-right: 3em;
+    width: 20vw;
+    float: left;
+}
+#marte{
+    margin-left: 3em;
+    width: 20vw;
+    float: right;
+}
+#jupiter{
+    margin-right: 3em;
+    width: 20vw;
+    float: left;
+}
+#saturno{
+    margin-left: 3em;
+    width: 20vw;
+    float: right;
+}
+#urano{
+    margin-right: 3em;
+    width: 15vw;
+    float: left;
+}
+#Netuno{
+    margin-left: 3em;
+    width: 15vw;
+    float: right;
+}

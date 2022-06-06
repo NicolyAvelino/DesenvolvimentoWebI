@@ -37,43 +37,24 @@ p{
     font-weight: bold;
     clear: both;
 }
-#mercurio{
+#mercurio, #terra, #jupiter{
     margin-right: 3em;
-    width: 27vw;
+    width: 25vw;
     float: left;
 }
-#venus{
+#venus, #marte, #saturno, #Netuno{
     margin-left: 3em;
-    width: 27vw;
-    float: right;
-}
-#terra{
-    margin-right: 3em;
-    width: 20vw;
-    float: left;
-}
-#marte{
-    margin-left: 3em;
-    width: 20vw;
-    float: right;
-}
-#jupiter{
-    margin-right: 3em;
-    width: 20vw;
-    float: left;
-}
-#saturno{
-    margin-left: 3em;
-    width: 20vw;
+    width: 25vw;
     float: right;
 }
 #urano{
     margin-right: 3em;
-    width: 15vw;
+    width: 22vw;
     float: left;
 }
-#Netuno{
-    margin-left: 3em;
-    width: 15vw;
-    float: right;
+footer{
+    background-color:#09062c;
+    color: #fff;
+    text-align: center;
+    padding: 1%;
 }

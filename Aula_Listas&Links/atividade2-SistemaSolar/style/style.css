@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    /* cor plano de fundo */
+    background-color:#09062c ;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.menu{
+    background-color: #09062c;
+    color: #fff;
+    font-weight: bold;
+    width: 16vw;
+    padding: 10px;
+    float: left;
+    margin-right: 2em;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu a li{
+    color: #fff;
+}
+.menu a li:hover{
+    color: #3320ff;
+}
+main{
+    width: 80vw;
+    margin: 30px auto;
+}
+p{
+    text-align: justify;
+    font-size: 16px;
+}
+li.open{
+    list-style:disc;
+}
+.box{
+    clear: both;
+}
+.rigth{
+    float: right;
+    margin: 0 0 0 3em;
+}
+.left{
+    float: left;
+    margin: 0 3em 0 0;
+}
+#planeta{
+    width: 24vw;
+}
+.caixa2 div{
+    margin: 0 0 4em 0;
+}
+.caixa2 h1{
+    font-size: 40px;
+    font-weight: bold;
+    clear: both;
+    margin-top: 2em;
+}
+#mercurio, #terra, #jupiter{
+    width: 25vw;
+}
+#venus, #marte, #saturno, #Netuno{
+    width: 25vw;
+}
+figcaption{
+    font-size: 12px;
+    color: rgb(43, 43, 43);
+}
+#urano{
+    width: 20vw;
+}
+footer{
+    background-color:#09062c;
+    color: #fff;
+    text-align: center;
+    padding: 1%;
+}

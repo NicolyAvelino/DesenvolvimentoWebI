@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;  
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 header{
     /* cor plano de fundo */
@@ -9,17 +9,21 @@ header{
     color: #fff;
     padding: 8px;
     text-align: center;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.fa-regular{
+    color: #fff;
 }
 .menu{
     background-color: #09062c;
     color: #fff;
-    font-weight: bold;
+    font-weight: 500;
     width: 16vw;
     padding: 10px;
     float: left;
     margin-right: 2em;
+    font-size: 15px;
 }
 .menu a{
     text-decoration: none;
@@ -36,7 +40,8 @@ main{
 }
 p{
     text-align: justify;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 300;
 }
 li.open{
     list-style:disc;
@@ -59,10 +64,13 @@ li.open{
     margin: 0 0 4em 0;
 }
 .caixa2 h1{
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 35px;
+    font-weight: 600;
     clear: both;
     margin-top: 2em;
+}
+.caixa2 h2{
+    font-weight: 500;
 }
 #mercurio, #terra, #jupiter{
     width: 25vw;

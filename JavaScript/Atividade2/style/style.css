@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+main{
+    padding-left: 150px;
+    padding-right: 150px;
+    margin: 3em auto;
+}
+h1{
+    font-size: 40px;
+    font-family: cursive;
+}
+div{
+    margin: 1em 0;
+    /* background-position:center top; */
+}
+button{
+    padding: 1em;
+    background-color: #8C5679;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #8C5679;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #302E59;
+    border: 1px solid #302E59;
+}

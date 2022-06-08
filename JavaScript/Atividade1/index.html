@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Testando JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicoly Avelino">
+    <link rel="stylesheet" href="style/style.css">
+    <script>
+        // Clicar com o mouse
+        function mudacor(color) {
+            document.getElementsByTagName("BODY")[0].style.backgroundColor = color;
+        }
+
+        // Passar o mouse
+        function mouseOver(cor){
+            document.getElementsByTagName("BODY")[0].style.backgroundColor = cor;
+        }
+        function mouseOut(cor){
+            document.getElementsByTagName("BODY")[0].style.backgroundColor = cor;
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>Testando JS - Clicar</h1>
+        <section>
+            <div class="box1" onclick="mudacor('#8C5679')"></div>
+            <div class="box2" onclick="mudacor('#302E59')"></div>
+            <div class="box3" onclick="mudacor('#202140')"></div>
+        </section>
+        <h1>Testando JS - Passar o Mouse</h1>
+        <section>
+            <div class="box1" onmouseover="mouseOver('#8C5679')" onmouseout="mouseOut('#fff')"></div>
+            <div class="box2" onmouseover="mouseOver('#302E59')" onmouseout="mouseOut('#fff')"></div>
+            <div class="box3" onmouseover="mouseOver('#202140')" onmouseout="mouseOut('#fff')"></div>
+        </section>
+    </main>
+</body>
+
+</html>

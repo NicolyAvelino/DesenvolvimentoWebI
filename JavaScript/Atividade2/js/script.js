@@ -4,6 +4,10 @@ function adicionar(){
 	document.getElementById("paragrafo").appendChild(novoItem);
 }
 function removerUltimo(){
-    var remover = document.getElementsByTagName("p")
-    document.getElementById("paragrafo").removeChild(remover);
+	var ultimo = document.getElementById("paragrafo");
+	ultimo.removeChild(ultimo.lastElementChild)
+}
+function removerTudo(){
+	var tudo = document.getElementById("paragrafo");
+	tudo.remove()
 }

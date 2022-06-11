@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Praticando JQuery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicoly Avelino">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Exemplo 1 JQuery</h1>
+    </div>
+    <main>
+        <div>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+        </div>
+    </main>
+    <script src="../jquery-3.6.0.js"></script>
+    <script>
+        $(function () {
+            $("p").on("click", function () {
+                $(this).css({
+                    "color": "#202140",
+                    "font-size": "15pt",
+                    "font-weight": "bold"
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

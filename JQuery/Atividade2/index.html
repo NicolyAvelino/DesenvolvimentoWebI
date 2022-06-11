@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Atividade 2 JQuery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicoly Avelino">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Exemplo 2 JQuery</h1>
+    </div>
+    <main>
+        <section class="caixa1">
+            <div class="box" style="background-color: #685ea0;"></div>
+            <div class="box" style="background-color: #302E59;"></div>
+            <div class="box" style="background-color: #202140;"></div>
+            <div class="box" style="background-color: #fff;"></div>
+        </section>
+        <section class="caixa2">
+            <input type="text" name="texto" id="texto">
+            <button id="AddParagrafo">Adicionar Parágrafo </button>
+            </div>
+            <div>
+                <button id="Aumentar">Aumentar tamanho fonte</button>
+                <button id="Diminuir">Diminuir tamanho fonte</button>
+            </div>
+            <div>
+                <button id="RemoverUltimo">Remover último parágrafo</button>
+                <button id="RemoverTudo">Remover todos os parágrafos</button>
+            </div>
+            <div id="paragrafo">
+
+            </div>
+        </section>
+    </main>
+    <script src="../jquery-3.6.0.js"></script>
+    <script>
+        $(function () {
+            $(".box").on("click", function () {
+                var cor = $(this).css("background-color");
+                $("body").css({
+                    "background-color": cor
+                })
+            });
+            $("#AddParagrafo").on("click", function () {
+                var novoItem = document.createElement("p");
+                var textoDigitado = document.getElementById("#texto");
+                document.getElementById("paragrafo").append(textoDigitado);
+            })
+            $("#Aumentar").on("click", function () {
+                $("p").css({
+                    "font-size": "+=4px"
+                })
+            })
+            $("#Diminuir").on("click", function () {
+                $("p").css({
+                    "font-size": "-=4px"
+                })
+            })
+            $("#RemoverUltimo").on("click", function () {
+                var ultimo = document.getElementById("paragrafo");
+                ultimo.removeChild(ultimo.lastElementChild)
+            })
+            $("#RemoverTudo").on("click", function () {
+                $("p").remove()
+            })
+        });
+        $fun
+    </script>
+</body>
+
+</html>

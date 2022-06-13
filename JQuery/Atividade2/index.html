@@ -22,14 +22,14 @@
             <div class="box" style="background-color: #fff;"></div>
         </section>
         <section class="caixa2">
-            <input type="text" name="texto" id="texto">
-            <button id="AddParagrafo">Adicionar Parágrafo </button>
-            </div>
             <div>
+                <input type="text" name="texto" id="texto" placeholder="Adicione o texto aqui">
+                <button id="AddParagrafo">Adicionar Parágrafo </button>
+            </div>
+            <div class="alinhamento">
                 <button id="Aumentar">Aumentar tamanho fonte</button>
                 <button id="Diminuir">Diminuir tamanho fonte</button>
-            </div>
-            <div>
+
                 <button id="RemoverUltimo">Remover último parágrafo</button>
                 <button id="RemoverTudo">Remover todos os parágrafos</button>
             </div>
@@ -47,11 +47,13 @@
                     "background-color": cor
                 })
             });
-            $("#AddParagrafo").on("click", function () {
+            $("#AddParagrafo").click(function () {
+                var text = $("#texto").val();
                 var novoItem = document.createElement("p");
-                var textoDigitado = document.getElementById("#texto");
-                document.getElementById("paragrafo").append(textoDigitado);
-            })
+                novoItem.innerHTML = text
+                $("#paragrafo").append(novoItem)
+            });
+
             $("#Aumentar").on("click", function () {
                 $("p").css({
                     "font-size": "+=4px"
@@ -69,6 +71,9 @@
             $("#RemoverTudo").on("click", function () {
                 $("p").remove()
             })
+            $("p").on("mouseover", function(){
+                $(this).addClass
+            });
         });
         $fun
     </script>

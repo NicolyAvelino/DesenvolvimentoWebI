@@ -1,0 +1,67 @@
+:root {
+    /* --text-color: #2a2a2a; */
+    --text-color: #fff;
+    --silver-light: #f3f3f3;
+    --silver: #e5e5e5;
+    --silver-dark: #d0d4d6;
+    --cyan: #00dde0;
+    --cyan-dark: #03bec1;
+    --teal: #00999b;
+    --green: #007651;
+    --limey: #00ffae;
+    --teal-dark: #00484f;
+    --indigo: #110022;
+    --purple: #4d367c;
+    --purple-dark: #1f003e;
+    --purple-bright: #8549ff;
+    --lavender: #776aaf;
+    --gradient: linear-gradient(to right, #4d367c 0%, #1f003e 20%, #1f003e 80%, #00646d 100%);
+    --grad-hologram: linear-gradient(to right, #00dde0, #8569ff);
+}
+body{
+    margin: 0;
+    padding: 0;  
+    font-family: 'Rajdhani', sans-serif;
+}
+section{
+    height: 100vh;
+}
+.box1 {
+    background: var(--indigo);
+}
+.box2{
+    background: var(--purple-bright);
+}
+.box3{
+    background: var(--green);
+}
+.box{
+    margin: 0em auto;
+    padding-top: 5em;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.corParagrafo{
+    color: var(--lavender);
+    font-size: 32px;
+    margin: 0;
+}
+.box1-1 h1{
+    font-weight: 400;
+    color: var(--teal);
+    line-height: 1;
+    font-size: 72px;
+}
+p{
+    text-align: justify;
+    color: var(--text-color)
+}
+.alinharParagrafo{
+    width: 35vw;
+}
+img{
+    width: 40vw;
+    margin-right: 2em;
+}

@@ -10,7 +10,7 @@ main{
 }
 .titulo{
     padding: 1%;
-    background-color:#8C5679;
+    background-color:#7e71c7;
     color: #fff;
     text-align: center;
 }
@@ -27,11 +27,22 @@ main{
     border: 2px solid #000;
 }
 .caixa2 div{
+    text-align: center;
+    margin: 2em 0;
+}
+#paragrafo{
     text-align: left;
-    margin: .5em 0;
+    margin: 0 8em;
+}
+input{
+    width: 25vw;
+    padding: 1em;
+    border: 1px solid #000;
+    border-radius: 10px;
 }
 button{
     padding: 1em;
+    margin-right: .5em;
     background-color: transparent;
     color: #000;
     font-weight: bold;
@@ -42,5 +53,10 @@ button{
 button:hover{
     background-color: #302E59;
     border: 1px solid #302E59;
+    color: #fff;
+}
+.destaque{
+    background-color: #685ea0;
+    font-weight: bold;
     color: #fff;
 }

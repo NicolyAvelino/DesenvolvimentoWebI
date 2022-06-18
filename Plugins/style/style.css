@@ -1,9 +1,6 @@
 :root {
-    /* --text-color: #2a2a2a; */
     --text-color: #fff;
-    --silver-light: #f3f3f3;
     --silver: #e5e5e5;
-    --silver-dark: #d0d4d6;
     --cyan: #00dde0;
     --cyan-dark: #03bec1;
     --teal: #00999b;
@@ -15,34 +12,85 @@
     --purple-dark: #1f003e;
     --purple-bright: #8549ff;
     --lavender: #776aaf;
-    --gradient: linear-gradient(to right, #4d367c 0%, #1f003e 20%, #1f003e 80%, #00646d 100%);
-    --grad-hologram: linear-gradient(to right, #00dde0, #8569ff);
 }
-body{
+
+body {
     margin: 0;
-    padding: 0;  
-    font-family: 'Rajdhani', sans-serif;
+    padding: 0;
+    font-family: "Rajdhani", sans-serif;
 }
-section{
-    height: 100vh;
+
+section {
+    height: 90vh;
 }
-.box1 {
+
+p {
+    text-align: justify;
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/* TABS ==================================== */
+.tabs ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs ul li {
+    padding: 1.5% 9.8%;
+    list-style-type: none;
+}
+
+.tabs ul li a {
+    text-decoration: none;
+}
+
+.tab1 a {
+    color: var(--teal);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.tab2 a {
+    color: var(--limey);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.tab3 a {
+    color: var(--cyan);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.tab4 a {
+    color: var(--indigo);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.box1,
+.tab1 {
     background: var(--indigo);
 }
-.box2{
-    background: var(--purple-bright);
+
+.box2,
+.tab2 {
+    background: var(--purple);
 }
-.box3{
+
+.box3,
+.tab3 {
     background: var(--teal-dark);
 }
-.box{
-    margin: 0em auto;
-    padding-top: 5em;
-    width: 80vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+.box4,
+.tab4 {
+    background: var(--green);
 }
+/* BACKGROUND IMAGE ======================================================= */
 .bg-geo {
     background: url("../imagem/bg-geo.png");
     background-repeat: no-repeat;
@@ -53,48 +101,183 @@ section{
     left: -15rem;
     top: 80px;
     z-index: 1;
-    opacity: .5;
+    opacity: 0.5;
 }
+
+.orbit {
+    background: url("../imagem/solar.png");
+    background-repeat: no-repeat;
+    background-size: 500px auto;
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    left: -10em;
+    opacity: 0.5;
+    top: 15px;
+}
+
 .borda {
     border-left: 2px solid #dee2e6;
     padding-left: 1em;
 }
-.corParagrafo{
+
+.corParagrafo {
     color: var(--lavender);
     font-size: 25px;
     margin: 0;
 }
-.box1-1 h1{
+/* BOX ===========================  */
+.box {
+    margin: 0em auto;
+    padding-top: 6em;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* BOX1 ===========================  */
+.box1-1 h1 {
     font-weight: 400;
     color: var(--teal);
     line-height: 1;
     font-size: 82px;
 }
-.box2-1 h1{
-    font-weight: 400;
-    color: var(--purple-dark);
+/* BOX2 ===========================  */
+.box2-1 h1 {
+    font-weight: 500;
+    color: var(--limey);
     line-height: 1;
     font-size: 52px;
 }
-p{
-    text-align: justify;
-    color: var(--text-color);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+.box2-1 span {
+    font-weight: 500;
+    color: var(--purple-dark);
 }
-.alinharParagrafo{
+
+.astro {
+    margin-right: 3em;
+}
+
+.tamDiv {
+    width: 50vw;
+}
+/* BOX3 ===========================  */
+.box3-1 {
+    padding-top: 5em;
+}
+
+.box3-1 h1 {
+    font-weight: 500;
+    color: var(--cyan);
+    line-height: 1;
+    font-size: 52px;
+    text-align: center;
+}
+
+.box3-1 h3 {
+    font-weight: 500;
+    color: var(--purple-bright);
+    line-height: 1;
+    font-size: 22px;
+    text-align: center;
+}
+/* BOX3 LISTA ===========================  */
+.lista ol {
+    margin-top: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box3-1 ol li {
+    color: var(--silver);
+    font-size: 18px;
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+.box3-1 li:hover {
+    color: var(--purple-bright)
+}
+
+.box3-1 a {
+    padding: 1%;
+    border-radius: 1em;
+    border: 1px solid var(--purple-bright);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.box3-1 a:hover {
+    background-color: var(--purple-bright);
+}
+
+.butao {
+    text-align: right;
+    margin: 8em 10em 0 0;
+}
+/* BOX 4 ===========================  */
+.box4-1 {
+    padding-top: 10em;
+}
+
+.curio {
+    border: 6px solid var(--purple-dark);
+    padding: 3% 2%;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.box4-1 h1 {
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: 1;
+    font-size: 32px;
+}
+
+.alinharParagrafo {
     width: 35vw;
 }
-img{
-    width: 40vw;
+
+/* PÁGINA PLANETA ESTILIZAÇÃO */
+.box-planeta {
+    background: var(--teal-dark);
 }
-h2{
+
+.box-planeta1 {
+    margin: 0 auto;
+    padding-top: 5em;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box-planeta1 h2 {
     color: var(--limey);
     font-weight: 400;
     font-size: 42px;
 }
-#mercurio, #terra, #jupiter, #urano{
+img {
+    width: 35vw;
+}
+
+#planetaSistema {
+    width: 40vw;
+}
+
+#mercurio,
+#terra,
+#jupiter,
+#urano,
+#planetaSistema {
     margin-left: 2em;
 }
-#venus, #marte, #saturno, #Netuno, #planeta{
+
+#venus,
+#marte,
+#saturno,
+#Netuno {
     margin-right: 2em;
 }

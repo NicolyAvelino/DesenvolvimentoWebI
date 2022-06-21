@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicoly Avelino">
+    <link rel="stylesheet" href="style.css">
+    <title>Somatória com Entrada de Dados por Formulário</title>
+
+</head>
+
+<body>
+    <!------------------------------ HEADER ----------------------------->
+    <header>
+        <h1>Somatória com Entrada de Dados por Formulário</h1>
+    </header>
+
+    <main>
+        <!-- Definição da área e dos elementos de um formulario -->
+        <form name="Formulario" action="" method="post">
+            <label>Entre com o valor 1:</label>
+            <input class="entrada" type="text" name="f_n1" placeholder="Digite aqui">
+            <p></p>
+
+            <label>Entre com o valor 2:</label>
+            <input class="entrada" type="text" name="f_n2" placeholder="Digite aqui">
+            <p></p>
+
+            <div class="btns">
+                <input class="botao" type="button" name="btn_somar" value="somar" onclick="soma()">
+                <input class="botao" type="reset" name="btn_apagar" value="apagar">
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    background-color: #F0F8FF;
+}
+header{
+    padding: 1%;
+    text-align: center;
+    background-color: #001a1a;
+    color: #fff;
+}
+main{
+    width: 40vw;
+    margin: 4em auto;
+    padding:4em;
+    background-color: #fff;
+    text-align: center;
+}
+.entrada{
+    margin-top: .8em;
+    padding: 1.5%;
+    width: 30vw;
+    border-radius: 0.5em;
+    border: 1px solid #001a1a;
+}
+label{
+    font-size: 18px;
+}
+.btns{
+    margin-top: 2em;
+}
+.botao{
+    padding: 1.5%;
+    width: 15vw;
+    border-radius: 0.5em;
+    border: 1px solid #001a1a;
+    cursor: pointer;
+    margin-right: .5em;
+    font-size: 14px;
+    font-weight: bold;
+}
+.botao:hover{
+    background-color: #001a1a;
+    color: #fff;
+}

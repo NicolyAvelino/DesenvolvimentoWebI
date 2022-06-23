@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicoly Avelino">
+    <link rel="stylesheet" href="style.css">
+    <title>Uso de Switch</title>
+
+</head>
+
+<body>
+    <!------------------------------ HEADER ----------------------------->
+    <header>
+        <h1>Uso de Switch</h1>
+    </header>
+    <main>
+        <form name="formcalend" action="" method="post">
+            Digite o mês (01 a 12): <input class="texto" type="text" name="f_mes" size="4" maxlength="2">
+        
+            <div class="btns">
+                <input class="buttons mgn" type="button" name="btn_processar" value="Processar" onclick="verificaMes()">
+                <input  class="buttons" type="reset" name="btn_cancelar" value="Cancelar">
+            </div>
+            
+            O Mês corresponde &eacute; <input class="texto" type="text" name="f_nomeMes" size="18" maxlength="15">
+        </form>
+    </main>
+    <script language="javascript">
+        // Pesquisar o nome do mês de referência atraves do numero do mês informado
+
+        // Definição das Variáveis
+        var js_mes;
+
+        // Inicio da funcao
+        function verificaMes() {
+            // captura do valor 
+            js_mes = parseInt(document.formcalend.f_mes.value);
+
+            // inicip da estrutura switch case
+            switch (js_mes) {
+                case 1: document.formcalend.f_nomeMes.value = 'Janeiro'; break;
+                case 2: document.formcalend.f_nomeMes.value = 'Fevereiro'; break;
+                case 3: document.formcalend.f_nomeMes.value = 'Março'; break;
+                case 4: document.formcalend.f_nomeMes.value = 'Abril'; break;
+                case 5: document.formcalend.f_nomeMes.value = 'Maio'; break;
+                case 6: document.formcalend.f_nomeMes.value = 'Junho'; break;
+                case 7: document.formcalend.f_nomeMes.value = 'Julho'; break;
+                case 8: document.formcalend.f_nomeMes.value = 'Agosto'; break;
+                case 9: document.formcalend.f_nomeMes.value = 'Setembro'; break;
+                case 10: document.formcalend.f_nomeMes.value = 'Outubro'; break;
+                case 11: document.formcalend.f_nomeMes.value = 'Novembro'; break;
+                case 12: document.formcalend.f_nomeMes.value = 'Dezembro'; break;
+                default: document.formcalend.f_nomeMes.value = '** M\u00eas Inv\u00e1lido!'; break;
+            }
+        }
+    </script>
+</body>
+
+</html>
